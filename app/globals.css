@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --wafg-cyan: #01ecf3;
+  --wafg-soft-cyan: #54d1de;
+  --wafg-warm-gray: #f4f4f1;
+}
+
+html, body { height: 100%; margin: 0; padding: 0; }
+body {
+  font-family: var(--font-sans), Inter, system-ui, sans-serif;
+  background: var(--wafg-warm-gray);
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer utilities {
+  .display { font-family: var(--font-display), 'Archivo Black', sans-serif; letter-spacing: -0.02em; line-height: 0.95; text-transform: lowercase; }
+  .script { font-family: var(--font-script), Caveat, cursive; font-weight: 700; }
+  .sticker { border: 2px solid #000; box-shadow: 6px 6px 0 #000; }
+  .sticker-sm { border: 2px solid #000; box-shadow: 4px 4px 0 #000; }
+  .sticker-cyan { border: 2px solid #000; box-shadow: 6px 6px 0 var(--wafg-cyan); }
+
+  .btn-cyan {
+    background: var(--wafg-cyan);
+    color: #000;
+    border: 2px solid #000;
+    box-shadow: 6px 6px 0 #000;
+    font-family: var(--font-display), 'Archivo Black', sans-serif;
+    text-transform: lowercase;
+    transition: transform 80ms, box-shadow 80ms;
+  }
+  .btn-cyan:hover { transform: translate(-2px,-2px); box-shadow: 8px 8px 0 #000; }
+  .btn-cyan:active { transform: translate(6px,6px); box-shadow: 0 0 0 #000; }
+
+  .btn-black {
+    background: #000;
+    color: var(--wafg-cyan);
+    border: 2px solid #000;
+    box-shadow: 6px 6px 0 var(--wafg-cyan);
+    font-family: var(--font-display), 'Archivo Black', sans-serif;
+    text-transform: lowercase;
+    transition: transform 80ms, box-shadow 80ms;
+  }
+  .btn-black:hover { transform: translate(-2px,-2px); box-shadow: 8px 8px 0 var(--wafg-cyan); }
+  .btn-black:active { transform: translate(6px,6px); box-shadow: 0 0 0 var(--wafg-cyan); }
+
+  .ast::before { content: "*"; color: var(--wafg-cyan); margin-right: 0.25em; font-family: var(--font-display), 'Archivo Black', sans-serif; }
+  .ast-after::after { content: "*"; color: var(--wafg-cyan); margin-left: 0.25em; font-family: var(--font-display), 'Archivo Black', sans-serif; }
+}
+
+/* preserve focus rings for accessibility */
+:focus-visible { outline: 2px solid var(--wafg-cyan); outline-offset: 2px; }
+
+/* hide arrows on number inputs */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+input[type="number"] { -moz-appearance: textfield; }
