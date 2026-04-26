@@ -1,6 +1,6 @@
 # wafg-good-chats
 
-**Spread Good Rooms** — speed networking app for the We Are For Good community.
+**Spread Good Chats** — speed networking app for the We Are For Good community.
 
 WAFG-branded video pairs, auto-rotating rounds, prompts, capture-the-connection, post-event recap. Built standalone (not a Zoom integration) so we control the whole experience.
 

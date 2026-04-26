@@ -174,7 +174,7 @@ function MainRoomView({ session, participants, myName, myId }) {
     <main className="min-h-screen flex flex-col text-white" style={{ background: '#000' }}>
       <header className="flex items-center justify-between px-6 py-3 border-b border-neutral-800">
         <div className="display text-base">
-          spread<span style={{ color: '#01ecf3' }}>*</span>good<span style={{ color: '#01ecf3' }}>*</span>rooms
+          spread<span style={{ color: '#01ecf3' }}>*</span>good<span style={{ color: '#01ecf3' }}>*</span>chats
         </div>
         <div className="text-xs text-neutral-400">
           <span className="font-semibold" style={{ color: '#01ecf3' }}>{liveCount}</span> here · {session.name}

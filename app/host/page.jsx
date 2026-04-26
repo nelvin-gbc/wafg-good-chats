@@ -33,7 +33,7 @@ export default async function HostDashboard() {
     <main className="min-h-screen p-8 max-w-6xl mx-auto" style={{ background: '#f4f4f1' }}>
       <header className="flex items-center justify-between mb-10">
         <div>
-          <div className="text-xs uppercase tracking-widest font-bold text-neutral-500">spread good rooms · host</div>
+          <div className="text-xs uppercase tracking-widest font-bold text-neutral-500">spread good chats · host</div>
           <div className="display text-4xl mt-1">hey {host?.display_name || 'friend'} <span style={{ color: '#01ecf3' }}>*</span></div>
         </div>
         <form action="/api/auth/signout" method="POST">

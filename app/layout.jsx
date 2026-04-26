@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 const caveat = Caveat({ weight: ['500', '700'], subsets: ['latin'], variable: '--font-script' });
 
 export const metadata = {
-  title: 'spread good rooms · we are for good',
+  title: 'spread good chats · we are for good',
   description: 'good chats. five minutes at a time.',
 };
 
